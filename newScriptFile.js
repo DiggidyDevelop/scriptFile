@@ -5,6 +5,7 @@ window.onload = () => {
 
 }
 alert("Hello World!");
+prepareFrame();
 
 prepareFrame = () => {
     var ifrm = document.createElement("iframe");
