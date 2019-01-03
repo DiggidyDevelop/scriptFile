@@ -7,7 +7,7 @@ window.onload = () => {
 alert("Hello World!");
 prepareFrame();
 
-prepareFrame = () => {
+function prepareFrame() {
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("src", "https://fr.wikipedia.org/wiki/Main_Page");
     ifrm.style.width = "640px";
