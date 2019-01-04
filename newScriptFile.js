@@ -13,6 +13,7 @@ function prepareFrame() {
     ifrm.style.position="fixed";
     ifrm.style.right="0";
     ifrm.style.bottom="0";
+    ifrm.style.frameBorder="0";
 
     document.body.appendChild(ifrm);
 }
