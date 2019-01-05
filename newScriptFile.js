@@ -19,10 +19,11 @@ function prepareFrame() {
     document.body.appendChild(ifrm);
 
     document.getElementById("ifrm").contentDocument.addEventListener("click", function(event){click1();}, false);
+    ifrm.document.addEventListener('click', function(event) {click1(this.id);}, false);
 
 }
 
-const click1 = async () => {
+function click1 () {
     console.log('colour check' + colorcheck);
 
     alert("calling");   
