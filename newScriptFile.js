@@ -14,6 +14,16 @@ function prepareFrame() {
     ifrm.style.right="0";
     ifrm.style.bottom="0";
     ifrm.style.border="0";
-
     document.body.appendChild(ifrm);
 }
+
+
+function click1() {
+    alert("calling");   
+    document.getElementById("ifrm" + blockid).style.backgroundColor = '#ff0000';
+    colorcheck = document.getElementById("ifrm").style.backgroundColor;
+    console.log(colorcheck);
+  };
+  document.getElementById("ifrm").addEventListener("click", function(){click1(1);}, false);
+
+// document.getElementById("ifrm").contentDocument.addEventListener('click', function(event) {clic(this.id);}, false);;
