@@ -14,8 +14,9 @@ function prepareFrame() {
     ifrm.style.right="0";
     ifrm.style.bottom="0";
     ifrm.style.border="0";
+    ifrm.setAttribute("id", "ifrm"); 
+
     document.body.appendChild(ifrm);
-    document.getElementsByTagName("iframe")[0].setAttribute("id", "ifrm"); 
 
 }
 
