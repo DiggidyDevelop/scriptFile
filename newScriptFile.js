@@ -20,9 +20,9 @@ function prepareFrame() {
 
 function click1() {
     alert("calling");   
-    document.getElementById("ifrm" + blockid).style.backgroundColor = '#ff0000';
+    document.getElementById("ifrm").style.backgroundColor = '#ff0000';
     colorcheck = document.getElementById("ifrm").style.backgroundColor;
-    console.log(colorcheck);
+    console.log('colour check' + colorcheck);
   };
   document.getElementsByTagName("iframe")[0].setAttribute("id", "ifrm"); 
 
