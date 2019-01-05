@@ -18,7 +18,7 @@ function prepareFrame() {
 
     document.body.appendChild(ifrm);
 
-    document.getElementById("ifrm").contentDocument.addEventListener("click", function(){click1(1);}, false);
+    document.getElementById("ifrm").contentDocument.addEventListener("click", function(event){click1();}, false);
 
 }
 
