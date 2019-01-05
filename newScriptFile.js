@@ -26,6 +26,6 @@ function click1() {
   };
   document.getElementsByTagName("iframe")[0].setAttribute("class", "ifrm"); 
 
-  document.getElementById("ifrm").addEventListener("click", function(){click1(1);}, false);
+  document.getElementsByClassName("ifrm").addEventListener("click", function(){click1(1);}, false);
 
 // document.getElementById("ifrm").contentDocument.addEventListener('click', function(event) {clic(this.id);}, false);;
