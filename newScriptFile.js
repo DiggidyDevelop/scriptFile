@@ -22,7 +22,7 @@ function prepareFrame() {
 
 }
 
-function click1() {
+const click1 = async () => {
     console.log('colour check' + colorcheck);
 
     alert("calling");   
