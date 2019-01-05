@@ -18,11 +18,11 @@ function prepareFrame() {
 
     document.body.appendChild(ifrm);
 
-    document.getElementById("ifrm").addEventListener("click", function(){click1(1);}, false);
+    document.getElementById("ifrm").contentDocument.addEventListener("click", function(){click1(1);}, false);
 
 }
 
-function click1  () {
+function click1() {
     console.log('colour check' + colorcheck);
 
     alert("calling");   
