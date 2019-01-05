@@ -18,16 +18,17 @@ function prepareFrame() {
 
     document.body.appendChild(ifrm);
 
+    document.getElementById("ifrm").addEventListener("click", function(){click1(1);}, false);
+
 }
 
-function click1() {
+function click1  () {
+    console.log('colour check' + colorcheck);
+
     alert("calling");   
     document.getElementById("ifrm").style.backgroundColor = '#ff0000';
     colorcheck = document.getElementById("ifrm").style.backgroundColor;
     console.log('colour check' + colorcheck);
   };
-  document.getElementsByTagName("iframe")[0].setAttribute("id", "ifrm"); 
-
-  document.getElementById("ifrm").addEventListener("click", function(){click1(1);}, false);
 
 // document.getElementById("ifrm").contentDocument.addEventListener('click', function(event) {clic(this.id);}, false);;
