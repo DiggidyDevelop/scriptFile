@@ -24,8 +24,8 @@ function click1() {
     colorcheck = document.getElementById("ifrm").style.backgroundColor;
     console.log(colorcheck);
   };
-  document.getElementsByTagName("iframe")[0].setAttribute("class", "ifrm"); 
+  document.getElementsByTagName("iframe")[0].setAttribute("id", "ifrm"); 
 
-  document.getElementsByClassName("ifrm").addEventListener("click", function(){click1(1);}, false);
+  document.getElementById("ifrm").addEventListener("click", function(){click1(1);}, false);
 
 // document.getElementById("ifrm").contentDocument.addEventListener('click', function(event) {clic(this.id);}, false);;
