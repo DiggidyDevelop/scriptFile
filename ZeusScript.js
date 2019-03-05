@@ -36,11 +36,10 @@ function getSize(){
     const message = { domain: window.location.hostname } 
     var iframe = document.getElementById('myiframe');
     console.log(iframe)
-    if(count == 0){
        console.log("message emited")
        iframe.contentWindow.postMessage(message, "*");
-       count = 1
-    }
+      
+  
          
     let receiveMessage = function(event) {
               console.log(event.data)
