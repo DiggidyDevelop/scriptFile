@@ -1,4 +1,29 @@
-function getSize() {
+// function getSize() {
+//     if (window.innerWidth < 450) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// function alterSize() {
+//     if (this.getSize()) {
+//         document.getElementsByClassName('zeus-chat')[0].style.width = "100%";
+//         document.getElementsByClassName('zeus-chat')[0].style.height = "100%";
+//     } else {
+//         document.getElementsByClassName('zeus-chat')[0].style.width = "850px";
+//         document.getElementsByClassName('zeus-chat')[0].style.height = "800px";
+//     }
+//     console.log("Hello from function")
+// }
+
+// function reduceSize() {
+//     document.getElementsByClassName('zeus-chat')[0].style.width = "100px";
+//     document.getElementsByClassName('zeus-chat')[0].style.height = "100px";
+// }
+window.onload = () => {
+    
+    function getSize() {
     if (window.innerWidth < 450) {
         return true;
     } else {
@@ -21,7 +46,6 @@ function reduceSize() {
     document.getElementsByClassName('zeus-chat')[0].style.width = "100px";
     document.getElementsByClassName('zeus-chat')[0].style.height = "100px";
 }
-window.onload = () => {
 
 //         var iframe = document.createElement('iframe');
 //         iframe.src = 'https://hyberchat.com/online/chat/';
