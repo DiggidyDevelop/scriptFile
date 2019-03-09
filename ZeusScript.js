@@ -34,7 +34,7 @@ function getSize(){
     
     let count = 0;
     const message = { domain: window.location.hostname } 
-    console.log(message, "Domain Name")
+    console.log( "Domain Name")
     var iframe = document.getElementById('myiframe');
     console.log(iframe)
        console.log("message emited")
