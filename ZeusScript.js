@@ -21,9 +21,10 @@ function getSize(){
   }
 
 
+window.onload = loadFrame;
 
- 
-    var iframe = document.createElement('iframe');
+function loadFrame(){
+     var iframe = document.createElement('iframe');
     iframe.src = 'https://hyberchat.com/online/chat/';
     iframe.className = 'zeus-chat';
     iframe.scrolling = 'no';
@@ -55,5 +56,8 @@ function getSize(){
         }
 
            window.addEventListener("message", receiveMessage, true);
+}
+ 
+   
 
   
