@@ -28,6 +28,7 @@ function getSize(){
     iframe.className = 'zeus-chat';
     iframe.scrolling = 'no';
     iframe.id = "myiframe";
+      console.log(iframe)
     document.body.appendChild(iframe);
    
     
