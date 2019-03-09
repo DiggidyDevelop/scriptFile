@@ -38,12 +38,12 @@ function loadFrame(){
     const message = { domain: window.location.hostname } 
    
     console.log(message , "Domain Name")
-    var iframe = document.getElementById('myiframe');
-    console.log(iframe)
+    var iframe = document.getElementById('myiframe').onload = function(){
+       console.log(iframe)
        console.log("message emited")
        iframe.contentWindow.postMessage(message, "*");
-      
-  
+    }
+ 
          
     let receiveMessage = function(event) {
               console.log(event.data)
