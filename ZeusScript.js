@@ -34,11 +34,12 @@ function reduceSize() {
                 document.body.appendChild(iframe);
             setTimeout(function() {
                 resolve(true)
-            }, 300);
+            }, 1000);
           });
     }
 
-    CreateIframe().then(created => {
+function set(){
+     CreateIframe().then(created => {
         console.log("Iframe Created", created)
         let count = 0;
         const message = {
@@ -63,5 +64,7 @@ function reduceSize() {
         }
         window.addEventListener("message", receiveMessage, true);
     })
+}
 
-
+set()
+   
