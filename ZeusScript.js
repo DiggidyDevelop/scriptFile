@@ -18,6 +18,17 @@ window.onload = () => {
 
     CreateIframe().then(created => {
         console.log("Iframe Created", created)
+        let count = 0;
+        const message = {
+            domain: window.location.hostname
+        }
+        var iframe = document.getElementById('myiframe');
+        console.log(iframe)
+        if (count == 0) {
+            console.log("message emited")
+            iframe.contentWindow.postMessage(message, "*");
+            count = 1
+        }
     })
 
 }
