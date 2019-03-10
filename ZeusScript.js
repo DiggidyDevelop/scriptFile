@@ -17,4 +17,8 @@ window.onload = () => {
           });
     }
 
+    CreateIframe().then(created => {
+        console.log("Iframe Created", created)
+    })
+
 }
