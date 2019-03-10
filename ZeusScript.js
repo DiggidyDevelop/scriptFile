@@ -10,10 +10,9 @@ window.onload = () => {
                 iframe.scrolling = 'no';
                 iframe.id = "myiframe";
                 document.body.appendChild(iframe);
-            // setTimeout(function() {
-            //   resolve('foo');
-            // }, 300);
-            resolve(true)
+            setTimeout(function() {
+                resolve(true)
+            }, 300);
           });
     }
 
