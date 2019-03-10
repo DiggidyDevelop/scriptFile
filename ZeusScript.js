@@ -22,9 +22,6 @@ function reduceSize() {
     document.getElementsByClassName('zeus-chat')[0].style.height = "100px";
 }
 
-window.onload = () => {
-
-
     function CreateIframe(){
      return new Promise(function(resolve, reject) {
          console.log("Inside function")
@@ -67,4 +64,4 @@ window.onload = () => {
         window.addEventListener("message", receiveMessage, true);
     })
 
-}
+
