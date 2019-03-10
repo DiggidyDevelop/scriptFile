@@ -37,6 +37,7 @@ function reduceSize() {
             }, 1000);
           });
     }
+set()
 
 function set(){
      CreateIframe().then(created => {
@@ -66,5 +67,5 @@ function set(){
     })
 }
 
-set()
+
    
