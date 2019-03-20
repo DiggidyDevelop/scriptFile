@@ -49,7 +49,7 @@ function set(){
         var iframe = document.getElementById('myiframe');
         console.log(iframe)
         if (count == 0) {
-            console.log("message emited")
+            console.log("message emited !!! " + message.domain)
             iframe.contentWindow.postMessage(message, "*");
             count = 1
         }
