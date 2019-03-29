@@ -1,5 +1,3 @@
-import { resolve } from "url";
-
 function getSize() {
     if (window.innerWidth < 450) {
         return true;
