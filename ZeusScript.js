@@ -27,7 +27,9 @@ function reduceSize() {
 function getDomain(){
     return new Promise((resolve, reject) => {
         const listOfScripts = document.getElementsByTagName('script')
+        console.log("scripts", listOfScripts)
         listOfScripts.forEach(script => {
+            console.log(script)
             if(script.includes("ZeusScript.js")){
                 const urlParams = new URLSearchParams(script);
                 const domain = urlParams.get('shop');
