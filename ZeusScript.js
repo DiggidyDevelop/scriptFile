@@ -21,21 +21,18 @@ function reduceSize() {
     document.getElementsByClassName('zeus-chat')[0].style.width = "100px";
     document.getElementsByClassName('zeus-chat')[0].style.height = "100px";
 }
-function getDomain(){
-    return new Promise((resolve, reject) => {
+    function CreateIframe(){
+     return new Promise(function(resolve, reject) {
+        let domain = null;
         const listOfScripts = document.getElementsByTagName('script')
         console.log("scripts", listOfScripts)
         for(let i = 0; i < listOfScripts; i++){
             if(listOfScripts[i].src.includes("ZeusScript.js")){
                 const url = new URL(listOfScripts[i].src);
-                const domain = url.searchParams.get("shop")
-                resolve(domain)
+                domain = url.searchParams.get("shop")
+                
             }
         }
-    })
-}
-    function CreateIframe(){
-     return new Promise(function(resolve, reject) {
          console.log("Inside function")
                 let iframe = document.createElement('iframe');
                 iframe.src = 'https://hyberchat.com/online/chat/';
@@ -45,19 +42,19 @@ function getDomain(){
                 iframe.style.cssText += 'width: 100px; height: 100px; position: fixed; z-index: 1000;border: 0; right: 0; bottom: 0;'
                 document.body.appendChild(iframe);
             setTimeout(function() {
-                resolve(true)
+                console.log("domain before timeout", domain)
+                resolve({mounted: true, domain: domain})
             }, 1000);
           });
     }
 set()
 
 function set(){
-    getDomain().then(domain => {
         CreateIframe().then(created => {
             console.log("Iframe Created", created)
             let count = 0;
             const message = {
-                domain: domain,
+                domain: created.domain,
                 custom: window.location.domain
             }
             var iframe = document.getElementById('myiframe');
@@ -79,5 +76,5 @@ function set(){
             }
             window.addEventListener("message", receiveMessage, true);
         })
-    }) 
 }
+
