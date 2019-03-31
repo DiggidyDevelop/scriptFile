@@ -26,7 +26,7 @@ function reduceSize() {
         let domain = null;
         const listOfScripts = document.getElementsByTagName('script')
         console.log("scripts", listOfScripts)
-        for(let i = 0; i < listOfScripts; i++){
+        for(let i = 0; i < listOfScripts.length; i++){
             console.log(listOfScripts[i])
             if(listOfScripts[i].src.includes("ZeusScript.js")){
                 console.log("match and inside if",listOfScripts[i].src)
