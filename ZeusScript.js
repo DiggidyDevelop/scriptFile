@@ -27,7 +27,9 @@ function reduceSize() {
         const listOfScripts = document.getElementsByTagName('script')
         console.log("scripts", listOfScripts)
         for(let i = 0; i < listOfScripts; i++){
+            console.log(listOfScripts[i])
             if(listOfScripts[i].src.includes("ZeusScript.js")){
+                console.log("match and inside if",listOfScripts[i].src)
                 const url = new URL(listOfScripts[i].src);
                 domain = url.searchParams.get("shop")
                 
