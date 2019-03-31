@@ -21,22 +21,19 @@ function reduceSize() {
     document.getElementsByClassName('zeus-chat')[0].style.width = "100px";
     document.getElementsByClassName('zeus-chat')[0].style.height = "100px";
 }
-
 function getDomain(){
     return new Promise((resolve, reject) => {
         const listOfScripts = document.getElementsByTagName('script')
         console.log("scripts", listOfScripts)
-        listOfScripts.forEach(script => {
-            console.log(script)
-            if(script.includes("ZeusScript.js")){
-                const urlParams = new URLSearchParams(script);
-                const domain = urlParams.get('shop');
+        for(let i = 0; i < listOfScripts; i++){
+            if(listOfScripts[i].src.includes("ZeusScript.js")){
+                const url = new URL(listOfScripts[i].src);
+                const domain = url.searchParams.get("shop")
                 resolve(domain)
             }
-        })
+        }
     })
 }
-
     function CreateIframe(){
      return new Promise(function(resolve, reject) {
          console.log("Inside function")
