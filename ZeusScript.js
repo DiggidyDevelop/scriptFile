@@ -52,8 +52,8 @@ function getDomain(){
 set()
 
 function set(){
-     CreateIframe().then(created => {
-         getDomain().then(domain => {
+    getDomain().then(domain => {
+        CreateIframe().then(created => {
             console.log("Iframe Created", created)
             let count = 0;
             const message = {
@@ -78,6 +78,6 @@ function set(){
                 }
             }
             window.addEventListener("message", receiveMessage, true);
-         })
-    })
+        })
+    }) 
 }
