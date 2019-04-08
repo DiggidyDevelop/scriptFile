@@ -13,6 +13,7 @@ function alterSize() {
     } else {
         document.getElementsByClassName('zeus-chat')[0].style.width = "850px";
         document.getElementsByClassName('zeus-chat')[0].style.height = "800px";
+        document.getElementsByClassName('zeus-chat')[0].style.left = "0px";
     }
     console.log("Hello from function")
 }
@@ -76,11 +77,11 @@ function set(){
                     this.reduceSize()
                 }
             }
-            var chatwindow = document.getElementById('sc-chat-window');
-            chatwindow.style.cssText += ' left: 40px;'
+            // var chatwindow = document.getElementById('sc-chat-window');
+            // chatwindow.style.cssText += ' left: 40px;'
 
-            var launcher = document.getElementById('sc-launcher');
-            launcher.style.cssText += ' left: 10px;'
+            // var launcher = document.getElementById('sc-launcher');
+            // launcher.style.cssText += ' left: 10px;'
 
             window.addEventListener("message", receiveMessage, true);
         })
