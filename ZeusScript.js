@@ -15,7 +15,7 @@ function alterSize() {
         document.getElementsByClassName('zeus-chat')[0].style.height = "800px";
         document.getElementsByClassName('zeus-chat')[0].style.left = "0px";
         document.getElementsByClassName('sc-chat-window opened')[0].style.left = "40px";
-        document.getElementsByClassName('sc-launcher opened')[0].style.left = "10px";
+        document.getElementsByClassName('sc-launcher')[0].style.left = "10px";
 
          
     }
