@@ -42,7 +42,7 @@ function reduceSize() {
         }
          console.log("Inside function")
                 let iframe = document.createElement('iframe');
-                iframe.src = 'https://6a36edd8.ngrok.io';
+                iframe.src = 'https://hyberchat.com/online/chat/';
                 iframe.className = 'zeus-chat';
                 iframe.scrolling = 'no';
                 iframe.id = "myiframe";
