@@ -13,9 +13,6 @@ function alterSize() {
     } else {
         document.getElementsByClassName('zeus-chat')[0].style.width = "850px";
         document.getElementsByClassName('zeus-chat')[0].style.height = "800px";
-        document.getElementsByClassName('zeus-chat')[0].style.left = "0px";
-        document.getElementsByClassName('sc-chat-window opened')[0].style.left = "40px";
-        document.getElementsByClassName('sc-launcher')[0].style.left = "10px";
 
          
     }
@@ -46,7 +43,7 @@ function reduceSize() {
                 iframe.className = 'zeus-chat';
                 iframe.scrolling = 'no';
                 iframe.id = "myiframe";
-                iframe.style.cssText += 'width: 100px; height: 100px; position: fixed; z-index: 1000;border: 0; left: 0; bottom: 0;'
+                iframe.style.cssText += 'width: 100px; height: 100px; position: fixed; z-index: 1000;border: 0; right: 0; bottom: 0;'
                 document.body.appendChild(iframe);
             setTimeout(function() {
                 console.log("domain before timeout", domain)
