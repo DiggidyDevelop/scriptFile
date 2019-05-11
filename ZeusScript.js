@@ -19,7 +19,7 @@ function alterSize() {
 
          
     }
-    console.log("Hello from function")
+    console.log("Hello from function1")
 }
 
 function reduceSize() {
